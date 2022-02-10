@@ -1,4 +1,29 @@
+main {
+  display: flex;
+  justify-content: space-around;
+}
+
+#aside {
+  width: 300px;
+  margin-right: 100px;
+}
+
 .card-pokemon {
-  width: 200px;
+  width: 150px;
+  height: 200px;
+  margin-right: 40px;
   background-color: black;
 } 
+
+#time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 200px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
