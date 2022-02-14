@@ -167,8 +167,6 @@ const randomFunction = async () => {
   })
 } 
 
-
-
 /* async function getStats (name) {
   const divInfo = document.querySelector('.info');
   const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}/`);
@@ -237,7 +235,6 @@ window.onload = async () => {
   cardsFunctions();
   functionsListeners();
 }
-const sum = (a,b) => a+b;
 
 module.exports = { save,
   getSaved,
