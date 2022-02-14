@@ -27,7 +27,17 @@ describe('Testa a funçao getSaved', () => {
 
 describe('Testa funçao pokeNames', () => {
   it('Testa seu retorno', async () => {
-    const names = await pokeNames();
-    expect(typeof names === 'string').toBe(true);
+    expect.assertions(1);
+    const pokeNames = jest.fn(() => true);
+    await pokeNames();
+    expect(pokeNames).toHaveReturned();
+  })
+})
+
+describe('Testa função loadList', () => { 
+  it ('', () => {
+    expect.assertions(1);
+    loadList();
+    expect(fetch).toHaveBeenCalled();
   })
 })
