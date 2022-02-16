@@ -1,5 +1,4 @@
 const urlAll = 'https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1000';
-const urlSimple = 'https://pokeapi.co/api/v2/pokemon/';
 const input = document.querySelector('#time-name');
 const timeName = document.querySelector('#name-team');
 const cards = document.querySelectorAll('.card-pokemon');
@@ -42,12 +41,10 @@ const functionsListeners = () => {
   btnYes.addEventListener('click', add)
   btnClear.addEventListener('click', clear);
   randomBtn.addEventListener('click', randomFunction);
-
   // Ao clicar na logo, o site é recarregado;
   headerImg.addEventListener('click', function reload() {
     document.location.reload(true);
   })
-
   // Quando clicar no <span>, o modal é fechado. Além disso os elementos internos do modal voltam a ficar escondidos e a classe selected é esvaziada;
   span.onclick = function() {
     modal.style.display = "none";
@@ -55,7 +52,6 @@ const functionsListeners = () => {
     displayHidden();
     inputModal.value = '';
   }
-  
   // Quando é clicado fora do modal, ele é fechado. Além disso os elementos internos do modal voltam a ficar escondidos e a classe selected é esvaziada;
   window.onclick = function(event) {
     input.addEventListener('input', changeName);
@@ -66,7 +62,6 @@ const functionsListeners = () => {
       inputModal.value = '';
     }
   }
-
   // Cria uma lista nova filtrada a cada tecla do input;
   inputModal.addEventListener('input', namesFiltered);
 }
@@ -163,7 +158,6 @@ const add = () => {
   displayHidden();
   addPokeType();
 }
-
 
 // Função que carrega a lista de Pokemons com base no array dado a ela;
 const loadList = (names) => {

@@ -12,13 +12,13 @@
 body {
   background-color: var(--platinum);
   margin: 0;
+  width: 100%;
 }
 
 .header-img {
   width: 400px;
   cursor: pointer;
 }
-
 
 header {
   display: flex;
@@ -52,7 +52,7 @@ main {
   display: flex;
   flex-flow: wrap column;
   justify-content: space-around;
-  width: 300px;
+  width: 350px;
   margin-left: 150px;
   font-size: 25px;
   font-family: 'Luxurious Roman', cursive;
@@ -94,6 +94,10 @@ aside label {
   border-radius: 10px;
 }
 
+#all-team {
+  padding-left: 30px;
+}
+
 .card-pokemon {
   width: 150px;
   height: 200px;
@@ -130,6 +134,7 @@ aside label {
 .question {
   width: 130px;
   transition: 500ms;
+  padding-top: 25px;
 }
 
 .question:hover {
