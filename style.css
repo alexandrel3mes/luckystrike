@@ -12,13 +12,13 @@
 body {
   background-color: var(--platinum);
   margin: 0;
+  width: 100%;
 }
 
 .header-img {
   width: 400px;
   cursor: pointer;
 }
-
 
 header {
   display: flex;
@@ -52,7 +52,7 @@ main {
   display: flex;
   flex-flow: wrap column;
   justify-content: space-around;
-  width: 300px;
+  width: 350px;
   margin-left: 150px;
   font-size: 25px;
   font-family: 'Luxurious Roman', cursive;
@@ -94,6 +94,10 @@ aside label {
   border-radius: 10px;
 }
 
+#all-team {
+  padding-left: 30px;
+}
+
 .card-pokemon {
   width: 150px;
   height: 200px;
@@ -130,6 +134,7 @@ aside label {
 .question {
   width: 130px;
   transition: 500ms;
+  padding-top: 25px;
 }
 
 .question:hover {
@@ -202,34 +207,31 @@ footer {
   justify-content: center;
 }
 
-
 .buttons:hover {
   border: 1px solid var(--platinum);
   background-color: var(--platinum);
 }
 
-
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
 }
 
-/* Modal Content/Box */
 .modal-content {
   display: flex;
   background-color: var(--platinum);
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 15% auto; 
   padding: 20px;
   border: 1px solid #888;
-  width: 35%; /* Could be more or less, depending on screen size */
+  width: 35%; 
 }
 
 .input-area {
@@ -252,7 +254,6 @@ footer {
   display: none;
 }
 
-/* The Close Button */
 .close {
   align-self: flex-start;
   color: #aaa;
